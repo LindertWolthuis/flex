@@ -1,8 +1,8 @@
-
 ///////////////////////////////////////////////////////////////////////
 $black-grey:#263238;
 $light-grey:#37474f;
 $font-roboto: 'Roboto Slab', serif;
+$full-percent: 100%;
 ///////////////////////////////////////////////////////////////////////
 html, body {
 	margin: 0;
@@ -62,7 +62,7 @@ a {
 .fw {
     display : flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: $full-percent;
     
 }
 
@@ -85,7 +85,7 @@ a {
 
         border: none;
     
-        flex: 100%;
+        flex: $full-percent;
 
         .avatar {
             width: 150px;
@@ -105,21 +105,21 @@ a {
         height: fit-content;
         border: none;
     
-        flex: 100%;
+        flex: $full-percent;
     }
     
     .contactme {
         height: fit-content;
         border: none;
     
-        flex: 100%;
+        flex: $full-percent;
     }
     
     .myskills {
         height: auto;
         border: none;
     
-        flex: 100%;
+        flex: $full-percent;
     }
 
 }
@@ -164,11 +164,8 @@ a {
 }
 
 
-#nino-rightside {
-    
+#nino-rightside {   
     flex : 69%;
-    /* width : 70%; */
-
     border: 1px solid #d2d2d2;
     .section{
         padding: 30px 40px;
@@ -183,7 +180,7 @@ a {
         padding: 30px 40px;
         
         .bus-article {
-            flex: 100%;
+            flex: $full-percent;
         }
         
         .cartoon-article {
@@ -362,8 +359,8 @@ article {
     }
 
     .bus-article {
-        /* flex-grow: 100%; */
-        width: 100%;
+        /* flex-grow: $full-percent; */
+        width: $full-percent;
     }
 
     .cartoon-article {
@@ -374,7 +371,7 @@ article {
 
     img {
         border: none;
-        max-width: 100%;
+        max-width: $full-percent;
     }
        
     .cartoon-article > * {
@@ -387,7 +384,7 @@ article {
 @media (max-width: 991px) {
        
         #nino-leftside {
-        flex: 100%;
+        flex: $full-percent;
 
         .header, .aboutme, .contactme, .myskills {
             flex: 50%;
@@ -395,25 +392,25 @@ article {
     }
 
     #nino-rightside {
-        flex: 100%;
+        flex: $full-percent;
     }
 }
 @media (max-width: 767px) {
     #nino-leftside {
 	.header, .aboutme, .contactme, .myskills {
         
-        flex: 100%;
+        flex: $full-percent;
     }
 
     }
     .cartoon-article {
         /* flex-grow: 30%; */
-        width: 100%;
+        width: $full-percent;
     }
     
     
     .nino-languages > div{
-        width: 100%;
+        width: $full-percent;
     }
 
 }
